@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T's Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ---------------Header------------------ -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo" style="font-size: 30px">
+            <span style="color: #ff004f">T's </span>Portfolio
+          </h1>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Devloper</p>
+          <h1>
+            Hi,I am T <span>Manish</span><br />
+            Kumar From Odisha
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------About------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="/images/IMG-20231018-WA0010.png" alt="" />
+          </div>
+          <div class="col-2">
+            <h1 class="sub-tittle">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Pariatur, sit consectetur ratione quo repellendus incidunt vero.
+              Non harum, fugit, molestias ipsum dolor, dicta perspiciatis vero
+              quo dolorem repellat iste accusantium cumque nisi dolore quidem.
+              Quam omnis tempora possimus odit ea. Iste, porro tempora laborum
+              explicabo quo animi aspernatur modi cumque voluptatibus sapiente
+              dolor unde ratione. Harum architecto dolorum laborum delectus quia
+              exercitationem excepturi doloremque ipsa consectetur!
+            </p>
+            <div class="tab-tittles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Devloper</span><br />HTML5 CSS3 JavaScript</li>
+                <li><span>FrameWork</span><br />ReactJS</li>
+                <li><span>Backend</span><br />NodeJS</li>
+                <li><span>Database</span><br />Microsoft SQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Intern</span><br />At SystemTron</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />Full Stack Training at Besant
+                  Technologies Hebbal
+                </li>
+                <li><span>2024</span><br />BTech From Gate Odisha</li>
+                <li>
+                  <span>2020</span><br />+2 From Sriyan Junior College Odisha
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------Services-------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Devlopment</h2>
+            <p>
+              It refers to the creating, building, and maintaining of websites
+              using HTML5,CSS3,JavaScript..
+            </p>
+            <a href="https://github.com/UchiaManish/WebDevlopment"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React Js</h2>
+            <p>
+              ReactJS is an open-source JavaScript library used to create user
+              interfaces in a declarative and efficient way.
+            </p>
+            <a href="https://github.com/UchiaManish/React-Tutorials"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Microsoft SQl</h2>
+            <p>
+              Microsoft SQL Server is a proprietary relational database
+              management system developed by Microsoft.
+            </p>
+            <a href="https://github.com/UchiaManish/Microsoft-SQL"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------Portfolio--------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/todolist.png" alt="" />
+            <div class="layer">
+              <h3>Todo List</h3>
+              <p>
+                It can be used for simple home lists or to manage complex
+                multi-user projects for business
+              </p>
+              <a href="http://192.168.54.223:5502/index.html"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/sppotify.png" alt="" />
+            <div class="layer">
+              <h3>Spotify Clone</h3>
+              <p>
+                It is created using Html,Css & JavaScript In This website you
+                can listen Music
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/calculator.png" alt="" />
+            <div class="layer">
+              <h3>Calculator Using</h3>
+              <p>
+                its a Calculator Website Using Html,Css & JavaScript In this you
+                can Perform Arithmatic Operation
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------Contact-------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>manishkumar637133@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>6371332854</p>
+            <div class="social-media">
+              <a
+                href="https://instagram.com/tmanish.k?utm_source=qr&igshid=OGU0MmVlOWVjOQ=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/TManish20"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.facebook.com/tmanish.kumar.100"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="/images/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="name" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            <!-- <span id="msg">hello</span> -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 T's Portfolio</p>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/32292377a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwuYh5JMbn-dnZdsoAukgK7V_KHEJH_evIT8qy9qeOe2JY2yGdqtHausvAQu1Tx13wm/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
